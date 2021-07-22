@@ -1,0 +1,16 @@
+[19-Nov-2020 13:09:56 Europe/Moscow] PHP Notice:  Undefined index: response in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/Callback/SendMySignal.php on line 369
+[19-Nov-2020 13:09:56 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/Callback/SendMySignal.php on line 371
+[20-Nov-2020 00:14:23 Europe/Moscow] PHP Notice:  Undefined index: response in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/Callback/SendMySignal.php on line 392
+[21-Nov-2020 21:24:15 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/Callback/SendMySignal.php on line 397
+[26-Nov-2020 18:30:38 Europe/Moscow] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DbUtil.php on line 9
+[26-Nov-2020 18:30:38 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DbUtil.php on line 10
+[26-Nov-2020 18:30:38 Europe/Moscow] PHP Warning:  mysqli::escape_string(): Couldn't fetch mysqli in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DbUtil.php on line 44
+[26-Nov-2020 18:30:38 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DbUtil.php on line 17
+[26-Nov-2020 18:30:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function fetch_all() on bool in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DbUtil.php:18
+Stack trace:
+#0 /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DbUtil.php(22): UbDbUtil::select('SELECT * FROM u...')
+#1 /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DataManager.php(14): UbDbUtil::selectOne('SELECT * FROM u...')
+#2 /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/Callback/Callback.php(32): UbDataManager->getByIdSecret(601126129, 'youjustpoorboy')
+#3 /home/likrevpp/public_html/likbot/iris-callback-api/callback.php(9): UbCallbackCallback->run()
+#4 {main}
+  thrown in /home/likrevpp/public_html/likbot/iris-callback-api/classes/Ub/DbUtil.php on line 18
